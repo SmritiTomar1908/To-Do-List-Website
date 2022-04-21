@@ -1,0 +1,73 @@
+<%-include('header')-%>
+
+<h1 class="head1" id="head1">ToDO App</h1>
+<!-- button to add task connected to respective form -->
+<form action="/add-task" method="POST" aria-required="true">
+  <div class="container">
+    <div class="input1">
+      <input
+        type="text"
+        placeholder="Add Task"
+        id="desc"
+        name="desc"
+        required
+        style="width: 100%; height: 3rem"
+      /><br />
+    </div>
+
+    <div class="dropdown" style="display: flex; margin-top: 10px">
+      <label class="visually-hidden" for="autoSizingSelect" required>Preference</label>
+      <select
+        class="form-select"
+        id="drop"
+        name="category"
+        required
+        style="width: 50%; height: 3rem"
+      >
+        <option selected id="category" selected disabled hidden>Category</option>
+        <option value="personal" class="category1">Personal</option>
+        <option value="work" class="category2">Work</option>
+        <option value="other" class="category3">Other</option>
+      </select>
+
+      <input
+        type="date"
+        id="date"
+        name="date"
+        style="width: 50%"
+        placeholder="Due Date"
+      />
+    </div>
+
+    <div class="btn">
+      <button class="add-btn">Add Task</button>
+    </div>
+  
+</form>
+<!-- 
+<div class="container1"> -->
+  <ul>
+    <!-- iterate over the list -->
+      <% for (let i of todo_List){ %>
+        
+          <li>
+          
+            <!-- button to delete task  connected to respective form -->
+      <button class="delete-btn"><a href="/delete-task/?id=<%= i._id%>">Delete Task</a></button>
+      <h3>Task:</h3>
+              <h5 class="desc"><%= i.desc %></h5>
+              <p class="cate"><%= i.category %></p>
+              <p class="date"><%= i.date %></p>
+
+              <div class="delete">
+                  <a href="">
+                      <!-- <i class="fas fa-window-close"></i> -->
+                  </a>
+              </div>
+          </li>
+      <% }%>
+  </ul>
+</div>
+</div>
+
+<%-include('footer')-%>
