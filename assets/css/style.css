@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+body{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: cover;
+}
+
+.head1{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.container{
+    border: 1px solid black;
+    height: 100vh;
+    padding: 25px;
+    border-radius: 2rem;
+    padding-top: 40px;
+}
+
+/* .input1{
+    /* border: 2px dotted blue; */
+/* } */ */
+
+
+.dropdown{
+    display: flex;
+    margin-top: 10px;
+}
+
+.dropdown #drop{
+    width: 50%;
+    height: 3rem;
+    
+}
+
+.dropdown #date{
+    width: 50%;
+}
+
+/* //to change buttoncolor */
+
+.category1{
+    background-color: purple;
+    color: white;
+}
+
+.category2{
+    background-color:green;
+    color: white;
+}
+
+.category3{
+    background-color:blue;
+    color: white;
+}
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    text-decoration: none;
+}
+button a{
+   text-decoration: none;
+  
+}
+
+.btn .add-btn{
+    margin-right: 28px;
+    width: 15%;
+    height: 40px;
+    background:green;
+    color:white;
+}
+
+.btn .add-btn a{
+    color: white;
+}
+
+
+/* 
+.container1{
+   border: 2px dotted black;
+   margin-left: 120px;
+   margin-right:120px;
+   box-sizing: border-box;
+} */
+ul{
+    padding: 40px;
+}
+
+ul li{
+    text-decoration: none;
+    list-style: none;
+     border: 1px solid;
+    padding: 10px;
+     box-shadow: 5px 10px;
+   
+}
+
+
+ul li  .delete-btn{
+    width: 15%;
+    background:rgb(190, 43, 43);
+    position: relative;
+    left: 80%;
+    top: 50px;
+}
+
+ul li .delete-btn a{
+   color:white ;
+}
+
+.desc{
+    text-transform: capitalize;
+    margin-left: 77px;
+    margin-top: -35px;
+}
+
+.cate{
+    position: relative;
+    left: 55%;
+    top: -18px;
+    border:2px solid blue;
+    width: 15%;
+    padding-left: 40px;
+    text-transform: capitalize;
+    padding-right: 50px;
+    background: lightblue;
+    color: black;
+
+}
+
+.date{
+  position: relative;
+  left: 75px;
+  margin-top: -38px;
+}
+
